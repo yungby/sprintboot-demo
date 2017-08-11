@@ -124,7 +124,7 @@ public class MailServiceImp implements MailService {
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (TemplateException e) {
-			e.printStackTrace();
+			e.printStackTrace();    
 		}
 	}
 

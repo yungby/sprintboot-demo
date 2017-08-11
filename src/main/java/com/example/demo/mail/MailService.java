@@ -9,6 +9,6 @@ public interface MailService {
 	 
 	 public void sendInlineMail(String to, String subject, String content);
 	 
-	 public void sendTemplatesMail(String to, String subject);
+	 public void sendTemplatesMail(String to, String subject); 
 	 
 }
