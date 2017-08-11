@@ -6,19 +6,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.example.demo.mail.MailService;
+import com.example.demo.mail.MailServiceImp;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-//@ActiveProfiles("163")
 public class DemoMailTests {
 
 	@Autowired
-	private MailService mailService;
+	private MailServiceImp mailServiceImp;
 	
 	@Test
 	public void testSimpleMailSender(){
-		mailService.sendSimpleMail("yungbyzy@163.com", "springboot-demo test mail sender", "This is test mail send!");
+		mailServiceImp.sendSimpleMail("yungbyandy@163.com", "springboot-demo test mail sender", "This is test mail send!");
 	}
 	
 }
