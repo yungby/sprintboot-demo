@@ -23,16 +23,18 @@ public class MailServiceImp implements MailService {
 	@Override
 	public void sendSimpleMail(String to, String subject, String content) {
 		SimpleMailMessage  simpleMailMessage = new SimpleMailMessage();
+		simpleMailMessage.setFrom(from);
 		simpleMailMessage.setTo(to);
 		simpleMailMessage.setSubject(subject);
 		simpleMailMessage.setText(content);
 		
 		try {
 			mailSender.send(simpleMailMessage);
+			log.info("send simple mail success!");
 		} catch (MailException e) {
+			log.info("send simple mail failure!");
 			e.printStackTrace();
 		}
-		log.info("send simple mail success!");
 	}
 
 }
