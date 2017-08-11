@@ -20,4 +20,19 @@ public class DemoMailTests {
 		mailServiceImp.sendSimpleMail("yungbyandy@163.com", "springboot-demo test mail sender", "This is test mail send!");
 	}
 	
+	@Test
+	public void testAttachmentMailSender(){
+		mailServiceImp.sendAttachmentMail("yungbyandy@163.com", "springboot-demo test attachment mail sender", "This is test attachment mail send!");
+	}
+	
+	@Test
+	public void testInlineMailSender(){
+		mailServiceImp.sendInlineMail("yungbyandy@163.com", "springboot-demo test inline mail sender", "This is test inline mail send!");
+	}
+	
+	@Test
+	public void testTemplatesMailSender(){
+		mailServiceImp.sendTemplatesMail("yungbyandy@163.com", "springboot-demo test templates mail sender");
+	}
+	
 }

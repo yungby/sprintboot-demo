@@ -71,16 +71,21 @@
 
 		<!-- mongodb 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		 <groupId>org.springframework.boot</groupId> 
+		 <artifactId>spring-boot-starter-data-mongodb</artifactId> 
 		</dependency>
-		-->
+		 -->
+		 
 		<!-- mail -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
 		</dependency>
-
+		<!-- freemark -->
+		<dependency>
+		      <groupId>org.springframework.boot</groupId>
+		      <artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
 		<!-- Spring dev tool -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
