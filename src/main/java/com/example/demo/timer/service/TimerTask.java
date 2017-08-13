@@ -11,7 +11,7 @@ public class TimerTask {
 		System.out.println("timeTask1 " + LocalTime.now());
 	}
 
-	// @Scheduled(fixedRate = 5000)
+	// @Scheduled(fixedRate = 5000) 
 	public void timeTask2() {
 		System.out.println("timeTask2 " + LocalTime.now());
 	}
