@@ -2,7 +2,6 @@ package com.example.demo.timer.service;
 
 import java.time.LocalTime;
 
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
