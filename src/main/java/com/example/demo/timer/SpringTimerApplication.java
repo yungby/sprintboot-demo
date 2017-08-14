@@ -1,14 +1,15 @@
 package com.example.demo.timer;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
 @EnableScheduling
-public class SpringApplication {
+public class SpringTimerApplication {
 
 	public static void main(String[] args) {
-		org.springframework.boot.SpringApplication.run(SpringApplication.class, args);
+		SpringApplication.run(SpringApplication.class, args);
 	}
 
 }
